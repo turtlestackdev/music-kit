@@ -1,0 +1,27 @@
+{
+  "name": "music-theory",
+  "description": "A TypeScript Project",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "repository": "https://github.com/turtlestackdev/music-theory",
+  "author": "Shane Scanlon",
+  "license": "AGPL-3.0",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dist": "pnpm run build && pnpm run types",
+    "build": "node build.mjs",
+    "types": "tsc --noEmit false --emitDeclarationOnly --declaration --project tsconfig.d.json"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "esbuild": "^0.17.14",
+    "ts-node": "^10.9.1"
+  }
+}

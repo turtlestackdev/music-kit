@@ -1,0 +1,41 @@
+{
+  "name": "midi",
+  "description": "A TypeScript library for subscribing to and publishing Web MIDI API messages",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "author": "Shane Scanlon",
+  "license": "AGPL-3.0",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "lib": "es6",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "music-theory": "workspace:*"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.0.2",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/jest": "^29.2.6",
+    "@types/webmidi": "^2.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "rollup": "^3.19.1",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0"
+  }
+}

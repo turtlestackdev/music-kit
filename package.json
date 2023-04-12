@@ -1,0 +1,30 @@
+{
+  "name": "music-kit",
+  "description": "A Family of TypeScript Libraries for Making Music Apps",
+  "version": "0.0.1",
+  "repository": "https://github.com/turtlestackdev/music-kit",
+  "author": "Shane Scanlon",
+  "license": "AGPL-3.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "tdd": "vitest"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.29.8",
+    "eslint": "^8.38.0",
+    "eslint-config-custom": "workspace:*",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.7",
+    "prettier-plugin-svelte": "^2.10.0",
+    "ts-node": "^10.9.1",
+    "turbo": "^1.8.8",
+    "vitest": "^0.29.8"
+  },
+  "packageManager": "pnpm@7.15.0"
+}

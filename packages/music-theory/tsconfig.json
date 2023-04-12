@@ -1,0 +1,15 @@
+{
+    "extends": "tsconfig/base.json",
+    "compilerOptions": {
+        "target": "es5",
+        "rootDir": "src",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "module": "esnext",
+        "declarationDir": "dist/types",
+        "outDir": "dist",
+        "verbatimModuleSyntax": true,
+        "incremental": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
