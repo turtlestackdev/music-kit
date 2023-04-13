@@ -54,8 +54,8 @@
           out:scale={{ duration: 200, easing: cubicIn }}
           class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
         >
-          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-            <div class="text-right ml-4 mk--mt-4 w-full max-h-4">
+          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+            <div class="mk--mt-4 ml-4 max-h-4 w-full text-right">
               <button class="" on:click={() => (_show = !_show)}>
                 <XMark />
               </button>
