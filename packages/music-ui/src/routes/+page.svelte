@@ -73,7 +73,7 @@
 </App>
 
 {#if false}
-  <Modal type="info" title="Do the thing" message="I am a message">
+  <Modal type="info" title="Do the thing">
     <svelte:fragment slot="buttons">
       <button
         type="button"

@@ -1,12 +1,12 @@
 <script lang="ts">
   import { Meta, Story, Template } from '@storybook/addon-svelte-csf'
-  import Staff from '$lib/Staff.svelte'
+  import * as ui from 'music-ui'
 </script>
 
-<Meta title="Octaves/Score/Staff" component={Staff} />
+<Meta title="Octaves/Score/Staff" component={ui.SheetMusic.Staff} />
 
 <Template let:args>
-  <Staff {...args} />
+  <ui.SheetMusic.Staff {...args} />
 </Template>
 
 <Story name="G Clef" args={{ clef: 'treble' }} />

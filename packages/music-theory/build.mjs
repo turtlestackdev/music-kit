@@ -16,7 +16,7 @@ if (!existsSync(dist)) {
 esbuild
   .build({
     entryPoints: ["src/index.ts"],
-    outfile: "dist/esm/index.js",
+    outfile: "dist/esm/index.ts",
     bundle: true,
     sourcemap: true,
     minify: true,
@@ -30,7 +30,7 @@ esbuild
 esbuild
   .build({
     entryPoints: ["src/index.ts"],
-    outfile: "dist/cjs/index.js",
+    outfile: "dist/cjs/index.ts",
     bundle: true,
     sourcemap: true,
     minify: true,
